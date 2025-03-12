@@ -70,7 +70,7 @@ class TestContactManagement(unittest.TestCase):
 
     def test_5_test_xss_security(self):
         self.login() 
-        self.browser.get(f"{self.url}/xss.php")
+        self.browser.get(f"{self.url}/vpage.php")
         self.browser.find_element(By.NAME, 'thing').send_keys("<script>alert(1)</script>")
         self.browser.find_element(By.NAME, 'submit').click()
         
