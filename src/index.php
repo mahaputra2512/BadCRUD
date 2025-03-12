@@ -28,7 +28,7 @@ if (!isset($_SESSION['user'])) {
 
     <body>
         <div class="container">
-            <h2>Halo, <?= $_SESSION['user'];?></h2>
+            <h2>Howdy, damn <?= $_SESSION['user'];?>!</h2>
             <?php include "menu.php"; ?>
             <div class="row">
                 <div class="col">
@@ -55,7 +55,7 @@ if (!isset($_SESSION['user'])) {
                                     <td><?= $contact['created'] ?></td>
                                     <td class="actions">
                                         <a type="button" class="btn btn-sm btn-outline btn-success" href="update.php?id=<?= $contact['id'] ?>" class="edit">edit</a>
-                                        <a type="button" class="btn btn-sm btn-outline btn-danger" href="delete.php?id=<?= $contact['id'] ?>" class="trash" onclick="return confirm('Are you sure you want to delete this item?');">delete</a>
+                                        <a type="button" class="btn btn-sm btn-outline btn-danger" href="delete.php?id=<?= $contact['id'] ?>" class="trash" onclick="return confirm('Damn, what r u doin\'? Are you sure?');">delete</a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
@@ -77,7 +77,7 @@ if (!isset($_SESSION['user'])) {
         </div>
 
         <div class="text-center">
-            <p class="mt-5 mb-3 text-muted">hk &copy; 2023</p>
+        <p class="mt-5 mb-3 text-muted">Your Damn Exercise &copy; 2023</p>
         </div>
     </body>
 

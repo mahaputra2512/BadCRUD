@@ -47,7 +47,7 @@ if (isset($_GET['id'])) {
                         <form action="update.php?id=<?= $contact['id'] ?>" method="post">
                             <input class="form-control form-control-sm" placeholder="Type name" type="text" name="name" value="<?= $contact['name'] ?>" id="name" required><br>
                             <input class="form-control form-control-sm" placeholder="Email" type="text" name="email" value="<?= $contact['email'] ?>" id="email" required><br>
-                            <input class="form-control form-control-sm" placeholder="Phone number" type="text" name="phone" value="<?= $contact['phone'] ?>" id="phone"><br>
+                            <input class="form-control form-control-sm" placeholder="Phone number" type="text" name="phone" value="" id="phone"><br>
                             <input class="form-control form-control-sm" placeholder="Title" type="text" name="title" value="<?= $contact['title'] ?>" id="title"><br>
                             <input class="btn btn-primary btn-sm" type="submit" value="Update">
                             <a href="index.php" type="button" class="btn btn-warning btn-sm">Cancel</a>
@@ -60,7 +60,7 @@ if (isset($_GET['id'])) {
     </div>
 
     <div class="text-center">
-        <p class="mt-5 mb-3 text-muted">hk &copy; 2023</p>
+    <p class="mt-5 mb-3 text-muted">Your Damn Exercise &copy; 2023</p>
     </div>
 </body>
 
